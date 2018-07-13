@@ -1,0 +1,77 @@
+slots:
+   evento:
+      type: text
+   palabra_interrogariva:
+      type: text
+
+entities:
+ - evento
+ - palabra_interrogariva
+
+intents:
+ - saludar
+ - afirmar
+ - negar
+ - informar
+ - agradecimiento
+ - pedir_info
+ - ofrecer_info
+
+templates:
+  utter_saludar:
+    - "¡Hola!"
+    - "Saludos"
+    - "¡Hey!"
+    - "Bienvenido"
+
+  utter_despedirse:
+    - "Adios"
+    - "Bye-bye"
+    - "Hasta luego"
+    - "Hasta pronto, gracias por tu visita"
+
+  utter_realizarbusqueda:
+    - "Entendido, permíteme realizar la búsqueda"
+    - "Comprendo, espera mientras encuentro la mejor respuesta"
+
+  utter_buscaralternativas:
+    - "Entendido, permíteme buscar otras alternativas"
+
+  utter_preguntar:
+    - "¿En qué puedo ayudarte?"
+    - "¿Qué deseas saber?"
+    - "¿Cómo te ayudo el día de hoy?"
+
+  utter_preguntarmasinfo:
+    - "¿Te gustaría saber algo más?, puedes preguntarme"
+    - "¿Necesitas saber algo más?, puedes preguntarme"
+
+  utter_preguntarsatisfaccion:
+    - "¿Logré responder tu inquietud?"
+    - "¿Encontraste la información que buscabas?"
+
+  utter_preguntarperiodo:
+    - text: "A cuál período te refieres?"
+      buttons:
+      - title: "Período actual"
+        payload: "Período actual"
+      - title: "Próximo período"
+        payload: "Proximo período"
+
+  utter_on_it:
+    - "Estoy en eso"
+
+  utter_response:
+    - "El {evento} sera el date"
+
+actions:
+- utter_saludar
+- utter_despedirse
+- utter_realizarbusqueda
+- utter_buscaralternativas
+- utter_preguntar
+- utter_preguntarmasinfo
+- utter_preguntarsatisfaccion
+- utter_preguntarperiodo
+- utter_on_it
+- utter_response

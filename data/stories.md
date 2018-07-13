@@ -1,0 +1,12 @@
+## saludar
+* saludar
+  - utter_saludar
+  - utter_preguntar
+* cuando_pregunta
+  - utter_realizarbusqueda
+  - utter_response
+  - utter_preguntarsatisfaccion
+* afirmar
+  - utter_preguntarmasinfo
+* negar
+  - utter_despedirse

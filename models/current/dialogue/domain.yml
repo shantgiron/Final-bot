@@ -1,0 +1,81 @@
+action_factory: null
+action_names:
+- utter_saludar
+- utter_despedirse
+- utter_realizarbusqueda
+- utter_buscaralternativas
+- utter_preguntar
+- utter_preguntarmasinfo
+- utter_preguntarsatisfaccion
+- utter_preguntarperiodo
+- utter_on_it
+- utter_response
+actions:
+- utter_saludar
+- utter_despedirse
+- utter_realizarbusqueda
+- utter_buscaralternativas
+- utter_preguntar
+- utter_preguntarmasinfo
+- utter_preguntarsatisfaccion
+- utter_preguntarperiodo
+- utter_on_it
+- utter_response
+config:
+  store_entities_as_slots: true
+entities:
+- evento
+- palabra_interrogariva
+intents:
+- saludar
+- afirmar
+- negar
+- informar
+- agradecimiento
+- pedir_info
+- ofrecer_info
+slots:
+  evento:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  palabra_interrogariva:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_buscaralternativas:
+  - text: Entendido, permíteme buscar otras alternativas
+  utter_despedirse:
+  - text: Adios
+  - text: Bye-bye
+  - text: Hasta luego
+  - text: Hasta pronto, gracias por tu visita
+  utter_on_it:
+  - text: Estoy en eso
+  utter_preguntar:
+  - text: ¿En qué puedo ayudarte?
+  - text: ¿Qué deseas saber?
+  - text: ¿Cómo te ayudo el día de hoy?
+  utter_preguntarmasinfo:
+  - text: ¿Te gustaría saber algo más?, puedes preguntarme
+  - text: ¿Necesitas saber algo más?, puedes preguntarme
+  utter_preguntarperiodo:
+  - buttons:
+    - payload: Período actual
+      title: Período actual
+    - payload: Proximo período
+      title: Próximo período
+    text: A cuál período te refieres?
+  utter_preguntarsatisfaccion:
+  - text: ¿Logré responder tu inquietud?
+  - text: ¿Encontraste la información que buscabas?
+  utter_realizarbusqueda:
+  - text: Entendido, permíteme realizar la búsqueda
+  - text: Comprendo, espera mientras encuentro la mejor respuesta
+  utter_response:
+  - text: El {evento} sera el date
+  utter_saludar:
+  - text: ¡Hola!
+  - text: Saludos
+  - text: ¡Hey!
+  - text: Bienvenido
+topics: []

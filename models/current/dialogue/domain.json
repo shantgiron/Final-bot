@@ -1,0 +1,27 @@
+{
+  "states": [
+    "intent_saludar",
+    "intent_afirmar",
+    "intent_negar",
+    "intent_informar",
+    "intent_agradecimiento",
+    "intent_pedir_info",
+    "intent_ofrecer_info",
+    "entity_evento",
+    "entity_palabra_interrogariva",
+    "slot_evento_0",
+    "slot_palabra_interrogariva_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_utter_saludar",
+    "prev_utter_despedirse",
+    "prev_utter_realizarbusqueda",
+    "prev_utter_buscaralternativas",
+    "prev_utter_preguntar",
+    "prev_utter_preguntarmasinfo",
+    "prev_utter_preguntarsatisfaccion",
+    "prev_utter_preguntarperiodo",
+    "prev_utter_on_it",
+    "prev_utter_response"
+  ]
+}
